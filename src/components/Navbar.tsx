@@ -17,7 +17,7 @@ export default function Navbar() {
             <CabinIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Troops 156
+            Troop 156
           </Typography>
           <Button color="inherit">Sign In</Button>
         </Toolbar>
