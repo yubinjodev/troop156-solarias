@@ -14,6 +14,10 @@ export default function Navbar() {
     window.open("/login", "_self");
   };
 
+  const handleClickHome = () => {
+    window.open("/", "_self");
+  };
+
   return (
     <Box
       className="Navbar-root"
@@ -22,6 +26,7 @@ export default function Navbar() {
       <AppBar position="static">
         <Toolbar>
           <IconButton
+            onClick={handleClickHome}
             size="large"
             edge="start"
             color="inherit"
