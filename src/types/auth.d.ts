@@ -11,3 +11,11 @@ interface CustomEventTarget extends EventTarget {
     value: string;
   };
 }
+
+export type UserType = "scout" | "parent";
+
+export type UserInfo = {
+  email: string;
+  password: string;
+  type: UserType;
+};
