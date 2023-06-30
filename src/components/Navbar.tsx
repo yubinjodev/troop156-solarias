@@ -4,7 +4,7 @@ import CabinIcon from '@mui/icons-material/Cabin';
 
 export default function Navbar() {
   return (
-    <Box className="Navbar-root" sx={{ flexGrow: 1 }}>
+    <Box className="Navbar-root" sx={{ flexGrow: 1, position:"absolute", width:"100%" }}>
       <AppBar position="static">
         <Toolbar>
           <IconButton

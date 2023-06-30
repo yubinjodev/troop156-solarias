@@ -5,7 +5,7 @@ export default function Login() {
   const onClickSubmit = () => [];
 
   return (
-    <Box component="section"  sx={{height:"100vh", overflowY:"hidden"}}>
+    <Box component="main" sx={{ height: "100vh" }}>
       <AuthForm type={"login"} onClickSubmit={onClickSubmit} />
     </Box>
   );
