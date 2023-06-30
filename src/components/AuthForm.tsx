@@ -5,15 +5,29 @@ import CoverImage from "../assets/images/cover.png";
 import { Box, Button, TextField, Typography } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import CustomLink from "./CustomLink";
+import { useState } from "react";
 
 export default function AuthForm(props: AuthFormProps) {
   const { type, onClickSubmit } = props;
+
+  const [email, setEmail] = useState<string>("");
+  const [pw, setPw] = useState<string>("");
+
+  const onChangeEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
+    setEmail(e.target.value);
+  };
+
+  const onChangePw = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
+    setPw(e.target.value);
+  };
 
   return (
     <Box
       className="AuthForm-root"
       component="form"
-      onSubmit={onClickSubmit}
+      onSubmit={(e) => onClickSubmit(e)}
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -53,11 +67,19 @@ export default function AuthForm(props: AuthFormProps) {
               {type === "signup" && "Sign Up"}
             </Typography>
             <TextField
+              name="email"
+              type="email"
+              value={email}
+              onChange={onChangeEmail}
               placeholder="example@email.com"
               label="Email"
               fullWidth
             />
             <TextField
+              name="pw"
+              type="password"
+              value={pw}
+              onChange={onChangePw}
               placeholder="JAHefWvXJeYdYefb"
               label="Password"
               fullWidth
