@@ -69,13 +69,15 @@ export default function AuthForm(props: AuthFormProps) {
 
             {type === "login" && (
               <Typography>
-                Don't have an account? <CustomLink>Sign Up</CustomLink>
+                Don't have an account?{" "}
+                <CustomLink link={"/signup"}>Sign Up</CustomLink>
               </Typography>
             )}
 
             {type === "signup" && (
               <Typography>
-                Already have an account? <CustomLink>Sign In</CustomLink>
+                Already have an account?{" "}
+                <CustomLink link={"/login"}>Sign In</CustomLink>
               </Typography>
             )}
           </Box>
