@@ -6,10 +6,10 @@ import Login from "./pages/Login";
 function App() {
   return (
     <>
-    {/* <ThemeProvider theme={themeOptions}> */}
+    <ThemeProvider theme={themeOptions}>
       <Navbar/>
       <Login/>
-    {/* </ThemeProvider> */}
+    </ThemeProvider>
     </>
   );
 }
