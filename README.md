@@ -1,46 +1,81 @@
-# Getting Started with Create React App
+# Troop 156 - Solarias (frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Website Preview](public/preview.png?raw=true)
 
-## Available Scripts
+Troop 156 is an exciting online platform designed exclusively for Cub Scouts and their families, bringing together a community of young explorers and their enthusiastic parents. Our interactive website serves as the ultimate hub for all things scouting, offering a seamless registration process, captivating event listings, and a wealth of resources to enhance your scouting journey.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Features](#feature)
+4. [Technologies](#technologies)
+5. [Contributing](#contributing)
+6. [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To run this project locally, please follow these steps:
 
-### `npm test`
+1. Clone the repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+https://github.com/yubinjodev/troop156-solarias.git
+```
 
-### `npm run build`
+2. Navigate to the project directory
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+cd troop156-solarias
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install the dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm install
+```
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Once the installation is complete, you can start the development server by running the following command:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This will start the application at http://localhost:3000 in your browser. Any changes you make to the source code will automatically refresh the page.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Features
 
-## Learn More
+- Authentication
+  - Login
+  - Sign up as a Scout
+  - Sign up as a Parent
+- Events
+  - See list of events
+  - Sign up for events
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project utilizes the following technologies:
+
+- Language : Typescript
+- Framework : React
+- Build tools : NPM
+- CSS Framework : Material UI
+- State Management : Redux & Redux Persist
+- API Client : Axios
+- Unit testing : Jest
+- E2E testing : Playwright
+
+## Contribution
+
+Contributions to this project are welcome.
+If you find any issues or have suggestions for improvements, feel free to open a new issue or submit a pull request.
+Not sure how to do that? Check [this](https://opensource.com/article/19/11/first-open-source-contribution-fork-clone) out
+
+When contributing, please adhere to the existing code style and follow the GitHub Flow for collaboration.
+
+## License
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute this code as long as the original license terms are included.
