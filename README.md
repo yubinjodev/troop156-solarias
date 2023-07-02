@@ -1,5 +1,7 @@
 # Troop 156 - Solarias (frontend)
 
+![Website Preview](public/preview.png?raw=true)
+
 Troop 156 is an exciting online platform designed exclusively for Cub Scouts and their families, bringing together a community of young explorers and their enthusiastic parents. Our interactive website serves as the ultimate hub for all things scouting, offering a seamless registration process, captivating event listings, and a wealth of resources to enhance your scouting journey.
 
 ## Table of Contents
@@ -50,8 +52,8 @@ This will start the application at http://localhost:3000 in your browser. Any ch
   - Sign up as a Scout
   - Sign up as a Parent
 - Events
-    - See list of events
-    - Sign up for events
+  - See list of events
+  - Sign up for events
 
 ## Technologies
 
